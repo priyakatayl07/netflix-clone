@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #111;
+        }
+        .navbar img {
+            height: 60px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://example.com/your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .movie-row {
+            display: flex;
+            overflow-x: auto;
+        }
+        .movie {
+            margin-right: 10px;
+            width: 200px;
+            flex-shrink: 0;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="https://cdn.dribbble.com/users/9378043/screenshots/16832559/media/10b207c918d604662e088308d16b366d.png?resize=1200x900&vertical=center" alt="Netflix Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <div>
+            <h1>Watch Movies and TV Shows</h1>
+            <p>Anywhere. Anytime.</p>
+            <button style="padding: 10px 20px; font-size: 1.2rem; background-color: #e50914; border: none; color: white; cursor: pointer;">Get Started</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-row">
+            <div class="movie">
+                <img src="https://i.ytimg.com/vi/htwtV6qsSVo/maxresdefault.jpg" alt="Movie 1">
+            </div>
+            <div class="movie">
+                <img src="https://i.ytimg.com/vi/DLET_u31M4M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDr2sdqAnzO59J0Ls83IAjQvHlQgQ" alt="Movie 2">
+            </div>
+            <div class="movie">
+                <img src="https://i.ytimg.com/vi/gGl_wKLARiU/maxresdefault.jpg" alt="Movie 3">
+            </div>
+            <!-- Add more movie items here -->
+        </div>
+    </div>
+
+</body>
+</html>
